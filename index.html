@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload" class="company-logo">
+                <img src="WTI logo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="Startup" onClick="onNavItemClick('startup')">Startup</li>
+                    <li class="hover-link nav-items" id="research" onClick="onNavItemClick('research')">Research</li>
+                    <li class="hover-link nav-items" id="internship" onClick="onNavItemClick('internship')">Internship</li>
+                    <li class="hover-link nav-items" id="career" onClick="onNavItemClick('career')">Career</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button class="search-button" id="search-button"> Search</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+            
+        </div>
+    </main>
+
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <div class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente id
+                    laborum temporibus quam at distinctio eius, molestias odit tenetur amet! Impedit totam
+                    similique placeat ut reprehenderit accusantium est vitae?</div>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="main.js"></script>
+</body>
+
+</html>
